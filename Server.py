@@ -1,3 +1,7 @@
+#Elmi Aden
+#CNE335 - 3/9/2025
+# working on to ping the EC2 in code
+
 class Server:
     """ Server class for representing and manipulating servers. """
 

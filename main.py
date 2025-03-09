@@ -1,3 +1,7 @@
+#Elmi Aden
+#CNE335 - 3/9/2025
+# working on to ping the EC2 in code
+
 # This is the template code for the CNE335 Final Project
 # Justin Ellis
 # CNE 335 Fall
