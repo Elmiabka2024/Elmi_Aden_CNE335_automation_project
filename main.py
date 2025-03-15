@@ -2,9 +2,7 @@
 #CNE335 - 3/9/2025
 # working on to ping the EC2 in code
 
-# This is the template code for the CNE335 Final Project
-# Justin Ellis
-# CNE 335 Fall
+
 from Server import Server
 def print_program_info():
     # TODO - Change your name
@@ -14,6 +12,9 @@ def print_program_info():
 if __name__ == '__main__':
     print_program_info()
     # TODO - Create a Server object
-    ec2 = Server("34.219.24.30")
+    ec2 = Server("34.219.24.30", r"C:\Users\warah\Downloads\Elmi_CNE335.pem")
     # TODO - Call Ping method and print the results
-    ec2.ping()
+    if ec2.ping():
+        print(f"Server {ec2.server_ip} is reachable!")
+    else:
+        print(f"Server {ec2.server_ip} is not reachable.")
