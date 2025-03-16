@@ -4,7 +4,7 @@ This is the final project for CNE335 and focuses on python scripts that pings an
 # Task
 ping an Ec2 server and run SSH commands using paramiko library for SSH communication and os for pinging
 # problems you my encounter 
-paramiko library does not support .ppk file. convert it to .pm using the following steps
+paramiko library does not support .ppk file. convert it to .pem using the following steps
 
 open Puttygen and load the .ppk file
 from the conversion menu, choose Export OpenSSH key and save it as a .pem file.
