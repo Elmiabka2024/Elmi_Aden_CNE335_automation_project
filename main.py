@@ -12,11 +12,11 @@ def print_program_info():
 if __name__ == '__main__':
     print_program_info()
     # TODO - Create a Server object
-    server_ip = "34.219.24.30"
+    server_dns = "ec2-34-219-24-30.us-west-2.compute.amazonaws.com"
     key_pair = r"C:\Users\warah\Downloads\Elmi_CNE335.pem"
-    ec2 = Server(server_ip, key_pair)
+    ec2 = Server(server_dns, key_pair)
     # TODO - Call Ping method and print the results
     if ec2.ping():
-        print(f"Server {ec2.server_ip} is reachable!")
+        print(f"Server {ec2.server_dns} is reachable!")
     else:
-        print(f"Server {ec2.server_ip} is not reachable.")
+        print(f"Server {ec2.server_dns} is not reachable.")
