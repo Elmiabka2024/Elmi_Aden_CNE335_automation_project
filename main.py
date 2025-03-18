@@ -12,7 +12,9 @@ def print_program_info():
 if __name__ == '__main__':
     print_program_info()
     # TODO - Create a Server object
-    ec2 = Server("34.219.24.30", r"C:\Users\warah\Downloads\Elmi_CNE335.pem")
+    server_ip = "34.219.24.30"
+    key_pair = r"C:\Users\warah\Downloads\Elmi_CNE335.pem"
+    ec2 = Server(server_ip, key_pair)
     # TODO - Call Ping method and print the results
     if ec2.ping():
         print(f"Server {ec2.server_ip} is reachable!")
